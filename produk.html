@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <a href="#"><img src="/logo.jpg" alt="logo"></a>
+    </div>
+
+    <nav>
+        <a href="/home.html">HOME</a>
+        <a href="/produk.html">PRODUCTS</a>
+        <!-- <a href="#">ABOUT</a> -->
+        <a href="/store.html">STORE</a>
+    </nav>
+
+       <div class="search">
+        <input type="text" id="searchInput" placeholder="Search produk...">
+    </div>
+</header>
+
+<!-- MAIN -->
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h3>JENIS PRODUK</h3>
+        <ul>
+            <li onclick="filterProduk('all')">Semua Produk</li>
+            <li onclick="filterProduk('toples')">Brownies Kemasan Kaca</li>
+            <li onclick="filterProduk('brownies')">Brownies Kemsan Plastik</li>
+            <!-- <li onclick="filterProduk('cake')">Cake</li> -->
+        </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+        <h2>Semua Produk</h2>
+
+        <div class="products" id="productList">
+
+            <!-- CARD -->
+            <div class="card" data-kategori="brownies">
+                <img src="/0.jpeg">
+                <h4>Brownies Coklat</h4>
+                <p>Rp. 35.000</p>
+            </div>
+
+            <div class="card" data-kategori="brownies">
+                <img src="/1.jpeg">
+                <h4>Brownies Red Velvet</h4>
+                <p>Rp. 35.000</p>
+            </div>
+
+            <div class="card" data-kategori="brownies">
+                <img src="/2.jpeg">
+                <h4>Brownies Matcha</h4>
+                <p>Rp. 35.000</p>
+            </div>
+
+            <div class="card" data-kategori="brownies">
+                <img src="/3.jpeg">
+                <h4>Brownies Coklat Kacang Almond</h4>
+                <p>Rp. 35.000</p>
+            </div>
+             <div class="card" data-kategori="brownies">
+                <img src="/4.jpeg">
+                <h4>Brownies Strawbery</h4>
+                <p>Rp. 35.000</p>
+            </div>
+             <div class="card" data-kategori="brownies">
+                <img src="/5.jpeg">
+                <h4>Brownies Taro</h4>
+                <p>Rp. 35.000</p>
+            </div>
+            <div class="card" data-kategori="toples">
+                <img src="/7.jpeg">
+                <h4>Brownies  Red Velvet</h4>
+                <p>Rp. 45.000</p>
+            </div>
+            <div class="card" data-kategori="toples">
+                <img src="/8.jpeg">
+                <h4>Brownies Matcha  </h4>
+                <p>Rp. 45.000</p>
+            </div>
+            <div class="card" data-kategori="toples">
+                <img src="/9.jpeg">
+                <h4>Brownies Taro</h4>
+                <p>Rp. 45.000</p>
+            </div>
+            <div class="card" data-kategori="toples">
+                <img src="/10.jpeg">
+                <h4>Brownies Lekas</h4>
+                <p>Rp. 45.000</p>
+            </div>
+           
+           
+
+        </div>
+
+        <!-- PAGINATION -->
+        <!-- <div class="pagination">
+            <button onclick="page(1)">1</button>
+            <button onclick="page(2)">2</button>
+            <button onclick="page(3)">3</button>
+        </div> -->
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
