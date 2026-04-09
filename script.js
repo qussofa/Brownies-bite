@@ -94,3 +94,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let nama = card.querySelector("h4").innerText.toLowerCase();
 let title = card.querySelector("h4").innerText.toLowerCase();
+
+
+// efek muncul saat load
+document.addEventListener("DOMContentLoaded", () => {
+    const boxes = document.querySelectorAll(".about-box");
+
+    boxes.forEach((box, index) => {
+        box.style.opacity = 0;
+        box.style.transform = "translateY(30px)";
+
+        setTimeout(() => {
+            box.style.transition = "0.6s";
+            box.style.opacity = 1;
+            box.style.transform = "translateY(0)";
+        }, index * 300);
+    });
+});
+
+
+
+const scroll = document.getElementById("scroll");
+
+document.querySelector(".left").onclick = () => {
+    scroll.scrollBy({ left: -250, behavior: "smooth" });
+};
+
+document.querySelector(".right").onclick = () => {
+    scroll.scrollBy({ left: 250, behavior: "smooth" });
+};
